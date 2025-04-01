@@ -1,0 +1,2 @@
+/usr/bin/ar qc libLLVMDebugHelpers.a CMakeFiles/LLVMDebugHelpers.dir/DebugHelpers.cpp.o
+/usr/bin/ranlib libLLVMDebugHelpers.a
