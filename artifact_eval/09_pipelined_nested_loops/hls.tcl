@@ -50,6 +50,6 @@ csynth_design
 export_design -format ip_catalog
 
 # Execute post-synthesis co-simulation of the synthesized RTL with the original C/C++-based test bench
-cosim_design -trace_level all
+# cosim_design -trace_level all
 
 close_project

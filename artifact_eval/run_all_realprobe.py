@@ -5,7 +5,13 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 MAX_WORKERS = 4 
 
-dirs = [d for d in os.listdir('.') if os.path.isdir(d) and d[0].isdigit()]
+# Exclude specific directories
+EXCLUDE_DIRS = {'cosim_result', 'csynth_result'}
+
+dirs = [
+    d for d in os.listdir('.')
+    if os.path.isdir(d) and d[0].isdigit() and d not in EXCLUDE_DIRS
+]
 
 def build(dir_path):
     try:
@@ -18,7 +24,6 @@ def build(dir_path):
         print(f"[FAIL] {dir_path}")
         return f"Failed in {dir_path}: {e}"
 
-# Main execution
 start_time = time.time()
 with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
     futures = {executor.submit(build, d): d for d in sorted(dirs)}

@@ -2,20 +2,16 @@ import os
 import shutil
 import zipfile
 
-# Current path (can be adjusted if needed)
 base_dir = os.getcwd()
 deploy_dir = os.path.join(base_dir, "deploy_fpga_all")
 
-# Clean up old deploy folder and zip if they exist
 if os.path.exists(deploy_dir):
     shutil.rmtree(deploy_dir)
 if os.path.exists(deploy_dir + ".zip"):
     os.remove(deploy_dir + ".zip")
 
-# Create deploy_fpga_all
 os.makedirs(deploy_dir, exist_ok=True)
 
-# Iterate through folders named 01_xxx to 23_xxx
 for entry in sorted(os.listdir(base_dir)):
     full_path = os.path.join(base_dir, entry)
     if os.path.isdir(full_path) and entry[:2].isdigit() and "_" in entry:
@@ -27,7 +23,6 @@ for entry in sorted(os.listdir(base_dir)):
         else:
             print(f"Skipping {entry}: No FPGA folder found.")
 
-# Create a zip file from the deploy_fpga_all directory
 zip_filename = deploy_dir + ".zip"
 with zipfile.ZipFile(zip_filename, 'w', zipfile.ZIP_DEFLATED) as zipf:
     for root, dirs, files in os.walk(deploy_dir):
