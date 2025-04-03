@@ -1,8 +1,8 @@
-# Install script for directory: /usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/llvm/tools/opt-viewer
+# Install script for directory: /usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/llvm/tools/opt-viewer
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/hls-build/hls-install")
+  set(CMAKE_INSTALL_PREFIX "/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/hls-build/hls-install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,30 +39,30 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/usr/scratch/jkim3998/.conda/dst_jiho/hlsllvm/bin/x86_64-conda-linux-gnu-objdump")
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "opt-viewer" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/opt-viewer" TYPE PROGRAM FILES "/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/llvm/tools/opt-viewer/opt-diff.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/opt-viewer" TYPE PROGRAM FILES "/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/llvm/tools/opt-viewer/opt-diff.py")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "opt-viewer" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/opt-viewer" TYPE PROGRAM FILES "/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/llvm/tools/opt-viewer/opt-stats.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/opt-viewer" TYPE PROGRAM FILES "/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/llvm/tools/opt-viewer/opt-stats.py")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "opt-viewer" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/opt-viewer" TYPE PROGRAM FILES "/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/llvm/tools/opt-viewer/opt-viewer.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/opt-viewer" TYPE PROGRAM FILES "/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/llvm/tools/opt-viewer/opt-viewer.py")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "opt-viewer" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/opt-viewer" TYPE PROGRAM FILES "/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/llvm/tools/opt-viewer/optpmap.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/opt-viewer" TYPE PROGRAM FILES "/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/llvm/tools/opt-viewer/optpmap.py")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "opt-viewer" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/opt-viewer" TYPE PROGRAM FILES "/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/llvm/tools/opt-viewer/optrecord.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/opt-viewer" TYPE PROGRAM FILES "/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/llvm/tools/opt-viewer/optrecord.py")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "opt-viewer" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/opt-viewer" TYPE PROGRAM FILES "/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/llvm/tools/opt-viewer/style.css")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/opt-viewer" TYPE PROGRAM FILES "/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/llvm/tools/opt-viewer/style.css")
 endif()
 

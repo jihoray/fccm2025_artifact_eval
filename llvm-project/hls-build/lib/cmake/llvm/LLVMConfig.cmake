@@ -2,10 +2,10 @@
 
 
 # LLVM_BUILD_* values available only from LLVM build tree.
-set(LLVM_BUILD_BINARY_DIR "/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/hls-build")
-set(LLVM_BUILD_LIBRARY_DIR "/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/hls-build/./lib")
-set(LLVM_BUILD_MAIN_INCLUDE_DIR "/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/llvm/include")
-set(LLVM_BUILD_MAIN_SRC_DIR "/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/llvm")
+set(LLVM_BUILD_BINARY_DIR "/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/hls-build")
+set(LLVM_BUILD_LIBRARY_DIR "/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/hls-build/./lib")
+set(LLVM_BUILD_MAIN_INCLUDE_DIR "/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/llvm/include")
+set(LLVM_BUILD_MAIN_SRC_DIR "/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/llvm")
 
 
 set(LLVM_VERSION_MAJOR 7)
@@ -127,26 +127,26 @@ set(LLVM_ON_WIN32 0)
 
 set(LLVM_LIBDIR_SUFFIX )
 
-set(LLVM_INCLUDE_DIRS "/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/llvm/include;/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/hls-build/include")
-set(LLVM_LIBRARY_DIRS "/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/hls-build/./lib")
+set(LLVM_INCLUDE_DIRS "/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/llvm/include;/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/hls-build/include")
+set(LLVM_LIBRARY_DIRS "/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/hls-build/./lib")
 
 # These variables are duplicated, but they must match the LLVM variables of the
 # same name. The variables ending in "S" could some day become lists, and are
 # preserved for convention and compatibility.
-set(LLVM_INCLUDE_DIR "/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/llvm/include;/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/hls-build/include")
-set(LLVM_LIBRARY_DIR "/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/hls-build/./lib")
+set(LLVM_INCLUDE_DIR "/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/llvm/include;/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/hls-build/include")
+set(LLVM_LIBRARY_DIR "/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/hls-build/./lib")
 
 set(LLVM_DEFINITIONS "-D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS")
-set(LLVM_CMAKE_DIR "/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/llvm/cmake/modules")
-set(LLVM_BINARY_DIR "/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/hls-build")
-set(LLVM_TOOLS_BINARY_DIR "/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/hls-build/./bin")
+set(LLVM_CMAKE_DIR "/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/llvm/cmake/modules")
+set(LLVM_BINARY_DIR "/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/hls-build")
+set(LLVM_TOOLS_BINARY_DIR "/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/hls-build/./bin")
 set(LLVM_TOOLS_INSTALL_DIR "bin")
 set(LLVM_HAVE_OPT_VIEWER_MODULES 0)
 
 if(NOT TARGET LLVMSupport)
   set(LLVM_EXPORTED_TARGETS "LLVMDemangle;LLVMSupport;LLVMTableGen;llvm-tblgen;LLVMCore;LLVMFuzzMutate;LLVMIRReader;LLVMCodeGen;LLVMSelectionDAG;LLVMAsmPrinter;LLVMMIRParser;LLVMGlobalISel;LLVMBinaryFormat;LLVMBitReader;LLVMBitWriter;LLVMTransformUtils;LLVMInstrumentation;LLVMInstCombine;LLVMScalarOpts;LLVMipo;LLVMVectorize;LLVMHello;LLVMObjCARCOpts;LLVMCoroutines;LLVMLinker;LLVMAnalysis;LLVMLTO;LLVMMC;LLVMMCParser;LLVMMCDisassembler;LLVMObject;LLVMObjectYAML;LLVMOption;LLVMDebugInfoDWARF;LLVMDebugInfoMSF;LLVMDebugInfoCodeView;LLVMDebugInfoPDB;LLVMSymbolize;LLVMExecutionEngine;LLVMInterpreter;LLVMMCJIT;LLVMOrcJIT;LLVMRuntimeDyld;LLVMTarget;LLVMX86CodeGen;LLVMX86AsmParser;LLVMX86Disassembler;LLVMX86AsmPrinter;LLVMX86Desc;LLVMX86Info;LLVMX86Utils;LLVMAsmParser;LLVMLineEditor;LLVMProfileData;LLVMCoverage;LLVMPasses;LLVMDlltoolDriver;LLVMLibDriver;LLVMXRay;LLVMWindowsManifest;LLVMDebugHelpers;LTO;llvm-ar;llvm-config;llvm-lto;llvm-profdata;clang-tblgen;bugpoint;BugpointPasses;llvm-dsymutil;llc;lli;llvm-as;llvm-bcanalyzer;llvm-c-test;llvm-cat;llvm-cfi-verify;llvm-cov;llvm-cvtres;llvm-cxxdump;llvm-cxxfilt;llvm-diff;llvm-dis;llvm-dwarfdump;llvm-dwp;llvm-extract;llvm-link;llvm-lto2;llvm-mc;llvm-mcmarkup;llvm-modextract;llvm-mt;llvm-nm;llvm-objcopy;llvm-objdump;llvm-opt-report;llvm-pdbutil;llvm-rc;llvm-readobj;llvm-rtdyld;LLVM;llvm-size;llvm-split;llvm-stress;llvm-strings;llvm-symbolizer;llvm-xray;obj2yaml;opt;sancov;sanstats;verify-uselistorder;yaml2obj;LLVMTestingSupport;gtest;gtest_main")
-  include("/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/hls-build/lib/cmake/llvm/LLVMExports.cmake")
-  include("/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/hls-build/lib/cmake/llvm/LLVMBuildTreeOnlyTargets.cmake")
+  include("/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/hls-build/lib/cmake/llvm/LLVMExports.cmake")
+  include("/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/hls-build/lib/cmake/llvm/LLVMBuildTreeOnlyTargets.cmake")
 endif()
 
 # By creating intrinsics_gen here, subprojects that depend on LLVM's

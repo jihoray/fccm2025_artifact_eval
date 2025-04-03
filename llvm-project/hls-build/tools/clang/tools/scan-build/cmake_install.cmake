@@ -1,8 +1,8 @@
-# Install script for directory: /usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/clang/tools/scan-build
+# Install script for directory: /usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/clang/tools/scan-build
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/hls-build/hls-install")
+  set(CMAKE_INSTALL_PREFIX "/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/hls-build/hls-install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,30 +39,30 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/usr/scratch/jkim3998/.conda/dst_jiho/hlsllvm/bin/x86_64-conda-linux-gnu-objdump")
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM FILES "/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/clang/tools/scan-build/bin/scan-build")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM FILES "/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/clang/tools/scan-build/bin/scan-build")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/libexec" TYPE PROGRAM FILES "/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/clang/tools/scan-build/libexec/ccc-analyzer")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/libexec" TYPE PROGRAM FILES "/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/clang/tools/scan-build/libexec/ccc-analyzer")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/libexec" TYPE PROGRAM FILES "/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/clang/tools/scan-build/libexec/c++-analyzer")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/libexec" TYPE PROGRAM FILES "/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/clang/tools/scan-build/libexec/c++-analyzer")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/man/man1" TYPE PROGRAM FILES "/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/clang/tools/scan-build/man/scan-build.1")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/man/man1" TYPE PROGRAM FILES "/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/clang/tools/scan-build/man/scan-build.1")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/scan-build" TYPE FILE FILES "/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/clang/tools/scan-build/share/scan-build/scanview.css")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/scan-build" TYPE FILE FILES "/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/clang/tools/scan-build/share/scan-build/scanview.css")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/scan-build" TYPE FILE FILES "/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/clang/tools/scan-build/share/scan-build/sorttable.js")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/scan-build" TYPE FILE FILES "/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/clang/tools/scan-build/share/scan-build/sorttable.js")
 endif()
 

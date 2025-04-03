@@ -1,8 +1,8 @@
-# Install script for directory: /usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/llvm/tools/lto
+# Install script for directory: /usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/llvm/tools/lto
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/hls-build/hls-install")
+  set(CMAKE_INSTALL_PREFIX "/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/hls-build/hls-install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,13 +39,13 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/usr/scratch/jkim3998/.conda/dst_jiho/hlsllvm/bin/x86_64-conda-linux-gnu-objdump")
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "LTO" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES
-    "/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/hls-build/lib/libLTO.so.7.0.0svn"
-    "/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/hls-build/lib/libLTO.so.7"
+    "/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/hls-build/lib/libLTO.so.7.0.0svn"
+    "/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/hls-build/lib/libLTO.so.7"
     )
   foreach(file
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libLTO.so.7.0.0svn"
@@ -54,17 +54,23 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "LTO" OR NOT CMAKE_INSTALL_COMPONENT)
     if(EXISTS "${file}" AND
        NOT IS_SYMLINK "${file}")
       if(CMAKE_INSTALL_DO_STRIP)
-        execute_process(COMMAND "/usr/scratch/jkim3998/.conda/dst_jiho/hlsllvm/bin/x86_64-conda-linux-gnu-strip" "${file}")
+        execute_process(COMMAND "/usr/bin/strip" "${file}")
       endif()
     endif()
   endforeach()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "LTO" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/hls-build/lib/libLTO.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/hls-build/lib/libLTO.so")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libLTO.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libLTO.so")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libLTO.so")
+    endif()
+  endif()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "LTO" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/llvm-c" TYPE FILE FILES "/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/llvm/include/llvm-c/lto.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/llvm-c" TYPE FILE FILES "/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/llvm/include/llvm-c/lto.h")
 endif()
 

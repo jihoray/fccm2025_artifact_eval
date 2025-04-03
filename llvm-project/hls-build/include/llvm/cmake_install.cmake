@@ -1,8 +1,8 @@
-# Install script for directory: /usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/llvm/include/llvm
+# Install script for directory: /usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/llvm/include/llvm
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/hls-build/hls-install")
+  set(CMAKE_INSTALL_PREFIX "/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/hls-build/hls-install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,13 +39,13 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/usr/scratch/jkim3998/.conda/dst_jiho/hlsllvm/bin/x86_64-conda-linux-gnu-objdump")
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/hls-build/include/llvm/IR/cmake_install.cmake")
-  include("/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/hls-build/include/llvm/Support/cmake_install.cmake")
+  include("/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/hls-build/include/llvm/IR/cmake_install.cmake")
+  include("/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/hls-build/include/llvm/Support/cmake_install.cmake")
 
 endif()
 

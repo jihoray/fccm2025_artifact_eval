@@ -7,7 +7,7 @@ if(CMAKE_VERSION VERSION_LESS "2.8.3")
    message(FATAL_ERROR "CMake >= 2.8.3 required")
 endif()
 cmake_policy(PUSH)
-cmake_policy(VERSION 2.8.3...3.27)
+cmake_policy(VERSION 2.8.3...3.24)
 #----------------------------------------------------------------
 # Generated CMake target import file.
 #----------------------------------------------------------------
@@ -71,21 +71,21 @@ set_target_properties(gtest_main PROPERTIES
 set_property(TARGET LLVMTestingSupport APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(LLVMTestingSupport PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/hls-build/lib/libLLVMTestingSupport.a"
+  IMPORTED_LOCATION_RELEASE "/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/hls-build/lib/libLLVMTestingSupport.a"
   )
 
 # Import target "gtest" for configuration "Release"
 set_property(TARGET gtest APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(gtest PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/hls-build/lib/libgtest.a"
+  IMPORTED_LOCATION_RELEASE "/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/hls-build/lib/libgtest.a"
   )
 
 # Import target "gtest_main" for configuration "Release"
 set_property(TARGET gtest_main APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(gtest_main PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/hls-build/lib/libgtest_main.a"
+  IMPORTED_LOCATION_RELEASE "/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/hls-build/lib/libgtest_main.a"
   )
 
 # Make sure the targets which have been exported in some other

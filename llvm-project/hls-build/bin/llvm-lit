@@ -13,8 +13,8 @@ def map_config(source_dir, site_config):
     config_map[source_dir] = site_config
 
 # Variables configured at build time.
-llvm_source_root = "/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/llvm"
-llvm_obj_root = "/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/hls-build"
+llvm_source_root = "/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/llvm"
+llvm_obj_root = "/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/hls-build"
 
 # Make sure we can find the lit package.
 sys.path.insert(0, os.path.join(llvm_source_root, 'utils', 'lit'))
@@ -24,13 +24,13 @@ sys.path.insert(0, os.path.join(llvm_source_root, 'utils', 'lit'))
 builtin_parameters = { 'build_mode' : "." }
 
 
-map_config('/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/clang-tools-extra/test/lit.cfg', '/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/hls-build/tools/clang/tools/extra/test/lit.site.cfg')
-map_config('/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/clang-tools-extra/test/Unit/lit.cfg', '/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/hls-build/tools/clang/tools/extra/test/Unit/lit.site.cfg')
-map_config('/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/clang/test/lit.cfg.py', '/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/hls-build/tools/clang/test/lit.site.cfg.py')
-map_config('/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/clang/test/Unit/lit.cfg.py', '/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/hls-build/tools/clang/test/Unit/lit.site.cfg.py')
-map_config('/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/llvm/utils/lit/tests/lit.cfg', '/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/hls-build/utils/lit/lit.site.cfg')
-map_config('/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/llvm/test/lit.cfg.py', '/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/hls-build/test/lit.site.cfg.py')
-map_config('/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/llvm/test/Unit/lit.cfg.py', '/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/hls-build/test/Unit/lit.site.cfg.py')
+map_config('/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/clang-tools-extra/test/lit.cfg', '/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/hls-build/tools/clang/tools/extra/test/lit.site.cfg')
+map_config('/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/clang-tools-extra/test/Unit/lit.cfg', '/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/hls-build/tools/clang/tools/extra/test/Unit/lit.site.cfg')
+map_config('/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/clang/test/lit.cfg.py', '/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/hls-build/tools/clang/test/lit.site.cfg.py')
+map_config('/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/clang/test/Unit/lit.cfg.py', '/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/hls-build/tools/clang/test/Unit/lit.site.cfg.py')
+map_config('/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/llvm/utils/lit/tests/lit.cfg', '/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/hls-build/utils/lit/lit.site.cfg')
+map_config('/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/llvm/test/lit.cfg.py', '/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/hls-build/test/lit.site.cfg.py')
+map_config('/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/llvm/test/Unit/lit.cfg.py', '/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/hls-build/test/Unit/lit.site.cfg.py')
 
 builtin_parameters['config_map'] = config_map
 

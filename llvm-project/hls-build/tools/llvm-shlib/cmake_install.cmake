@@ -1,8 +1,8 @@
-# Install script for directory: /usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/llvm/tools/llvm-shlib
+# Install script for directory: /usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/llvm/tools/llvm-shlib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/hls-build/hls-install")
+  set(CMAKE_INSTALL_PREFIX "/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/hls-build/hls-install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,11 +39,11 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/usr/scratch/jkim3998/.conda/dst_jiho/hlsllvm/bin/x86_64-conda-linux-gnu-objdump")
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "LLVM" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/llvm/cmake/modules/LLVMInstallSymlink.cmake")
+  include("/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/llvm/cmake/modules/LLVMInstallSymlink.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "LLVM" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -51,7 +51,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "LLVM" OR NOT CMAKE_INSTALL_COMPONENT)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "LLVM" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/llvm/cmake/modules/LLVMInstallSymlink.cmake")
+  include("/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/llvm/cmake/modules/LLVMInstallSymlink.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "LLVM" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -59,11 +59,11 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "LLVM" OR NOT CMAKE_INSTALL_COMPONENT)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "LLVM" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/hls-build/lib/libLLVM-7.0svn.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/hls-build/lib/libLLVM-7.0svn.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libLLVM-7.0svn.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libLLVM-7.0svn.so")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/scratch/jkim3998/.conda/dst_jiho/hlsllvm/bin/x86_64-conda-linux-gnu-strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libLLVM-7.0svn.so")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libLLVM-7.0svn.so")
     endif()
   endif()
 endif()

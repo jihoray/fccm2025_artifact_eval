@@ -1,8 +1,8 @@
-# Install script for directory: /usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/clang/tools/scan-view
+# Install script for directory: /usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/clang/tools/scan-view
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/hls-build/hls-install")
+  set(CMAKE_INSTALL_PREFIX "/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/hls-build/hls-install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,34 +39,34 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/usr/scratch/jkim3998/.conda/dst_jiho/hlsllvm/bin/x86_64-conda-linux-gnu-objdump")
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM FILES "/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/clang/tools/scan-view/bin/scan-view")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM FILES "/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/clang/tools/scan-view/bin/scan-view")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/scan-view" TYPE FILE FILES "/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/clang/tools/scan-view/share/ScanView.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/scan-view" TYPE FILE FILES "/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/clang/tools/scan-view/share/ScanView.py")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/scan-view" TYPE FILE FILES "/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/clang/tools/scan-view/share/Reporter.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/scan-view" TYPE FILE FILES "/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/clang/tools/scan-view/share/Reporter.py")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/scan-view" TYPE FILE FILES "/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/clang/tools/scan-view/share/startfile.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/scan-view" TYPE FILE FILES "/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/clang/tools/scan-view/share/startfile.py")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/scan-view" TYPE FILE FILES "/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/clang/tools/scan-view/share/FileRadar.scpt")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/scan-view" TYPE FILE FILES "/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/clang/tools/scan-view/share/FileRadar.scpt")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/scan-view" TYPE FILE FILES "/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/clang/tools/scan-view/share/GetRadarVersion.scpt")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/scan-view" TYPE FILE FILES "/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/clang/tools/scan-view/share/GetRadarVersion.scpt")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/scan-view" TYPE FILE FILES "/usr/scratch/jkim3998/bc_test/RealProbe/llvm-project/clang/tools/scan-view/share/bugcatcher.ico")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/scan-view" TYPE FILE FILES "/usr/scratch/jkim3998/bc_test/fccm2025_artifact_eval/llvm-project/clang/tools/scan-view/share/bugcatcher.ico")
 endif()
 
